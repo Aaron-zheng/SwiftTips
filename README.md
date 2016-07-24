@@ -15,4 +15,5 @@
 ## 图片
 
 - 圆形图片（传入矩形图片，输出圆型图片）
-<img src="https://raw.githubusercontent.com/Aaron-zheng/SwiftTips/master/screenshot/circleimage.jpg" alt="" style="width:100px;">
+
+<img src="https://raw.githubusercontent.com/Aaron-zheng/SwiftTips/master/screenshot/circleimage.jpg" alt="" style="max-width:20%;">
