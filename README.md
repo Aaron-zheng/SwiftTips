@@ -14,6 +14,5 @@
 
 ## 图片
 
-### 圆形图片
-传入矩形图片，输出圆型图片
+- 圆形图片（传入矩形图片，输出圆型图片）
 ![https://github.com/Aaron-zheng](https://raw.githubusercontent.com/Aaron-zheng/SwiftTips/master/screenshot/circleimage.jpg)
