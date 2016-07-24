@@ -14,4 +14,4 @@ Target: x86_64-apple-macosx10.9
 ## 图片
 
 ### 圆形图片（传入矩形图片，输出圆型图片）
-![https://github.com/Aaron-zheng](https://raw.githubusercontent.com/Aaron-zheng/SwiftTips/screenshot/circleimage.jpg)
+![https://github.com/Aaron-zheng](https://raw.githubusercontent.com/Aaron-zheng/SwiftTips/master/screenshot/circleimage.jpg)
