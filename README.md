@@ -16,4 +16,10 @@
 
 - 圆形图片（传入矩形图片，输出圆型图片）
 
-<img src="https://raw.githubusercontent.com/Aaron-zheng/SwiftTips/master/screenshot/circleimage.jpg" alt="" width="100px">
+<img src="https://raw.githubusercontent.com/Aaron-zheng/SwiftTips/master/screenshot/circleimage.jpg" alt="" width="200px">
+
+## 标签
+
+- 垂直对齐的标签（左边用的是 UILabel，自动出现在 label frame 的中间，而右边用的是 UIVerticalAligmentLabel，出现在 label frame 的顶部）
+
+<img src="https://raw.githubusercontent.com/Aaron-zheng/SwiftTips/master/screenshot/uiverticalaligmentlabel.jpg" alt="" width="200px">
