@@ -25,6 +25,14 @@ public class UIVerticalAlignLabel: UILabel {
         }
     }
     
+    /**
+     顶部和左对齐的标签
+     
+     - parameter bounds:        <#bounds description#>
+     - parameter numberOfLines: <#numberOfLines description#>
+     
+     - returns: <#return value description#>
+     */
     public override func textRectForBounds(bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
         let rect = super.textRectForBounds(bounds, limitedToNumberOfLines: numberOfLines)
         

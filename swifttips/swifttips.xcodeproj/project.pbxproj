@@ -17,6 +17,7 @@
 		A062C4F61D448B9F00E9BA2A /* swifttipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062C4F51D448B9F00E9BA2A /* swifttipsUITests.swift */; };
 		A062C5061D448C4500E9BA2A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062C5051D448C4500E9BA2A /* CircleImage.swift */; };
 		A09AF6971D45D6BA006BDB88 /* UIVerticalAlignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09AF6961D45D6BA006BDB88 /* UIVerticalAlignLabel.swift */; };
+		A09AF69F1D476976006BDB88 /* PreCalculateTextHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09AF69E1D476976006BDB88 /* PreCalculateTextHeight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		A062C4F71D448B9F00E9BA2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A062C5051D448C4500E9BA2A /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		A09AF6961D45D6BA006BDB88 /* UIVerticalAlignLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVerticalAlignLabel.swift; sourceTree = "<group>"; };
+		A09AF69E1D476976006BDB88 /* PreCalculateTextHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreCalculateTextHeight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				A09AF6961D45D6BA006BDB88 /* UIVerticalAlignLabel.swift */,
+				A09AF69E1D476976006BDB88 /* PreCalculateTextHeight.swift */,
 			);
 			name = label;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A09AF69F1D476976006BDB88 /* PreCalculateTextHeight.swift in Sources */,
 				A09AF6971D45D6BA006BDB88 /* UIVerticalAlignLabel.swift in Sources */,
 				A062C4D51D448B9E00E9BA2A /* ViewController.swift in Sources */,
 				A062C5061D448C4500E9BA2A /* CircleImage.swift in Sources */,
