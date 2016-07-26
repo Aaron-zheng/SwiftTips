@@ -24,6 +24,6 @@
 
 <img src="https://raw.githubusercontent.com/Aaron-zheng/SwiftTips/master/screenshot/uiverticalaligmentlabel.jpg" alt="" width="200px">
 
-－ 计算在给定的文字类型和宽度限制下，文本将会占到的高度
+- 计算在给定的文字类型和宽度限制下，文本将会占到的高度
 
 <img src="https://raw.githubusercontent.com/Aaron-zheng/SwiftTips/master/screenshot/precalculatetextheight.jpg" alt="" width="200px">
