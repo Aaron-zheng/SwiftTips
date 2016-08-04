@@ -14,16 +14,15 @@
 
 ## 图片
 
-- 把正方形或者长方形图片，转换为圆形图片
-
-<img src="https://raw.githubusercontent.com/Aaron-zheng/SwiftTips/master/screenshot/circleimage.jpg" alt="" width="200px">
+1. 把正方形或者长方形图片，转换为圆形图片
 
 ## 标签
 
-- 顶部和左对齐的标签（左边用的是 UILabel，自动出现在 label frame 的中间，而右边用的是 UIVerticalAligmentLabel，出现在 label frame 的顶部）
+1. 顶部和左对齐的标签（左边用的是 UILabel，自动出现在 label frame 的中间，而右边用的是 UIVerticalAligmentLabel，出现在 label frame 的顶部）
 
-<img src="https://raw.githubusercontent.com/Aaron-zheng/SwiftTips/master/screenshot/uiverticalaligmentlabel.jpg" alt="" width="200px">
+2. 计算在给定的文字类型和宽度限制下，文本将会占到的高度
 
-- 计算在给定的文字类型和宽度限制下，文本将会占到的高度
 
-<img src="https://raw.githubusercontent.com/Aaron-zheng/SwiftTips/master/screenshot/precalculatetextheight.jpg" alt="" width="200px">
+## 扩展
+
+1. 获得当前类名

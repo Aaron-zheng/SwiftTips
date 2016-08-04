@@ -31,6 +31,7 @@ class ViewController: UIViewController {
        
         presentImage()
         presentLabel()
+        presentExtension()
     }
 
     /**
@@ -40,7 +41,7 @@ class ViewController: UIViewController {
         /**
          把正方形或者长方形图片，转换为圆形图片
          */
-//        presentCircleImage()
+        //presentCircleImage()
         
     }
     
@@ -51,12 +52,20 @@ class ViewController: UIViewController {
         /**
          顶部和左对齐的标签
          */
-//        presentUIVerticalAligmentLabel()
+        //presentUIVerticalAligmentLabel()
         
         /**
          计算在给定的文字类型和宽度限制下，文本将会占到的高度
          */
-        presentPreCalculateTextHeight()
+        //presentPreCalculateTextHeight()
+    
+    }
+    
+    private func presentExtension() {
+        /**
+         获得当前类名
+         */
+        //ViewController.presentClassName()
     }
     
     
@@ -99,6 +108,10 @@ class ViewController: UIViewController {
         label.textColor = UIColor.whiteColor()
         label.backgroundColor = UIColor.blackColor()
         view.addSubview(label)
+    }
+    
+    static func presentClassName() {
+        print(self.nameOfClass)
     }
 }
 
