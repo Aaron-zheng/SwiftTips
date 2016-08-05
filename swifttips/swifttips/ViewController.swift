@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         presentImage()
         presentLabel()
         presentExtension()
+        presentStatusBar()
     }
 
     /**
@@ -68,6 +69,12 @@ class ViewController: UIViewController {
         //ViewController.presentClassName()
     }
     
+    private func presentStatusBar() {
+        /**
+         更改 status bar （运营商，时间，电池） 为白色
+         */
+        //presentChangeStatusBar()
+    }
     
     
     //下面为例子说明
@@ -112,6 +119,11 @@ class ViewController: UIViewController {
     
     static func presentClassName() {
         print(self.nameOfClass)
+    }
+    
+    private func presentChangeStatusBar() {
+        self.view.backgroundColor = UIColor.blackColor()
+        changeStatusBarToLight()
     }
 }
 

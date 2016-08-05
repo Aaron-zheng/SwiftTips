@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A0248B491D533D21003E3B00 /* NSObject+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0248B481D533D21003E3B00 /* NSObject+String.swift */; };
+		A0248B551D549414003E3B00 /* ControllerStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0248B541D549414003E3B00 /* ControllerStatusBar.swift */; };
 		A062C4D31D448B9E00E9BA2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062C4D21D448B9E00E9BA2A /* AppDelegate.swift */; };
 		A062C4D51D448B9E00E9BA2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062C4D41D448B9E00E9BA2A /* ViewController.swift */; };
 		A062C4D81D448B9E00E9BA2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A062C4D61D448B9E00E9BA2A /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		A0248B481D533D21003E3B00 /* NSObject+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+String.swift"; sourceTree = "<group>"; };
+		A0248B541D549414003E3B00 /* ControllerStatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerStatusBar.swift; sourceTree = "<group>"; };
 		A062C4CF1D448B9E00E9BA2A /* swifttips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swifttips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A062C4D21D448B9E00E9BA2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A062C4D41D448B9E00E9BA2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 				A0248B481D533D21003E3B00 /* NSObject+String.swift */,
 			);
 			name = extension;
+			sourceTree = "<group>";
+		};
+		A0248B531D5493E7003E3B00 /* statusbar */ = {
+			isa = PBXGroup;
+			children = (
+				A0248B541D549414003E3B00 /* ControllerStatusBar.swift */,
+			);
+			name = statusbar;
 			sourceTree = "<group>";
 		};
 		A062C4C61D448B9E00E9BA2A = {
@@ -148,6 +158,7 @@
 		A062C5041D448C2600E9BA2A /* utility */ = {
 			isa = PBXGroup;
 			children = (
+				A0248B531D5493E7003E3B00 /* statusbar */,
 				A0248B471D533D10003E3B00 /* extension */,
 				A09AF6951D45D678006BDB88 /* label */,
 				A062C5071D448C6F00E9BA2A /* image */,
@@ -304,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0248B491D533D21003E3B00 /* NSObject+String.swift in Sources */,
+				A0248B551D549414003E3B00 /* ControllerStatusBar.swift in Sources */,
 				A09AF69F1D476976006BDB88 /* PreCalculateTextHeight.swift in Sources */,
 				A09AF6971D45D6BA006BDB88 /* UIVerticalAlignLabel.swift in Sources */,
 				A062C4D51D448B9E00E9BA2A /* ViewController.swift in Sources */,
