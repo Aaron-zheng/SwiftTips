@@ -20,6 +20,7 @@
 		A062C5061D448C4500E9BA2A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062C5051D448C4500E9BA2A /* CircleImage.swift */; };
 		A09AF6971D45D6BA006BDB88 /* UIVerticalAlignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09AF6961D45D6BA006BDB88 /* UIVerticalAlignLabel.swift */; };
 		A09AF69F1D476976006BDB88 /* PreCalculateTextHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09AF69E1D476976006BDB88 /* PreCalculateTextHeight.swift */; };
+		A0BB849D1D7B914000FF43D8 /* ViewShadowDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BB849C1D7B914000FF43D8 /* ViewShadowDepth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A062C5051D448C4500E9BA2A /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		A09AF6961D45D6BA006BDB88 /* UIVerticalAlignLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVerticalAlignLabel.swift; sourceTree = "<group>"; };
 		A09AF69E1D476976006BDB88 /* PreCalculateTextHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreCalculateTextHeight.swift; sourceTree = "<group>"; };
+		A0BB849C1D7B914000FF43D8 /* ViewShadowDepth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewShadowDepth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,20 +88,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A0248B471D533D10003E3B00 /* extension */ = {
+		A0248B471D533D10003E3B00 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				A0248B481D533D21003E3B00 /* NSObject+String.swift */,
 			);
-			name = extension;
+			name = Extension;
 			sourceTree = "<group>";
 		};
-		A0248B531D5493E7003E3B00 /* statusbar */ = {
+		A0248B531D5493E7003E3B00 /* StatusBar */ = {
 			isa = PBXGroup;
 			children = (
 				A0248B541D549414003E3B00 /* ControllerStatusBar.swift */,
 			);
-			name = statusbar;
+			name = StatusBar;
 			sourceTree = "<group>";
 		};
 		A062C4C61D448B9E00E9BA2A = {
@@ -125,7 +127,7 @@
 		A062C4D11D448B9E00E9BA2A /* swifttips */ = {
 			isa = PBXGroup;
 			children = (
-				A062C5041D448C2600E9BA2A /* utility */,
+				A062C5041D448C2600E9BA2A /* Utility */,
 				A062C4D21D448B9E00E9BA2A /* AppDelegate.swift */,
 				A062C4D41D448B9E00E9BA2A /* ViewController.swift */,
 				A062C4D61D448B9E00E9BA2A /* Main.storyboard */,
@@ -155,32 +157,41 @@
 			path = swifttipsUITests;
 			sourceTree = "<group>";
 		};
-		A062C5041D448C2600E9BA2A /* utility */ = {
+		A062C5041D448C2600E9BA2A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				A0248B531D5493E7003E3B00 /* statusbar */,
-				A0248B471D533D10003E3B00 /* extension */,
-				A09AF6951D45D678006BDB88 /* label */,
-				A062C5071D448C6F00E9BA2A /* image */,
+				A0BB849B1D7B912300FF43D8 /* View */,
+				A0248B531D5493E7003E3B00 /* StatusBar */,
+				A0248B471D533D10003E3B00 /* Extension */,
+				A09AF6951D45D678006BDB88 /* Label */,
+				A062C5071D448C6F00E9BA2A /* Image */,
 			);
-			name = utility;
+			name = Utility;
 			sourceTree = "<group>";
 		};
-		A062C5071D448C6F00E9BA2A /* image */ = {
+		A062C5071D448C6F00E9BA2A /* Image */ = {
 			isa = PBXGroup;
 			children = (
 				A062C5051D448C4500E9BA2A /* CircleImage.swift */,
 			);
-			name = image;
+			name = Image;
 			sourceTree = "<group>";
 		};
-		A09AF6951D45D678006BDB88 /* label */ = {
+		A09AF6951D45D678006BDB88 /* Label */ = {
 			isa = PBXGroup;
 			children = (
 				A09AF6961D45D6BA006BDB88 /* UIVerticalAlignLabel.swift */,
 				A09AF69E1D476976006BDB88 /* PreCalculateTextHeight.swift */,
 			);
-			name = label;
+			name = Label;
+			sourceTree = "<group>";
+		};
+		A0BB849B1D7B912300FF43D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0BB849C1D7B914000FF43D8 /* ViewShadowDepth.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +333,7 @@
 				A062C5061D448C4500E9BA2A /* CircleImage.swift in Sources */,
 				A062C4DB1D448B9E00E9BA2A /* swifttips.xcdatamodeld in Sources */,
 				A062C4D31D448B9E00E9BA2A /* AppDelegate.swift in Sources */,
+				A0BB849D1D7B914000FF43D8 /* ViewShadowDepth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

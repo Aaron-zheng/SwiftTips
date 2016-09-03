@@ -12,23 +12,27 @@
 
 # 技巧分享
 
-## 图片
+## Image
 
 1. 把正方形或者长方形图片，转换为圆形图片
 
 
-## 标签
+## Label
 
 1. 顶部和左对齐的标签（左边用的是 UILabel，自动出现在 label frame 的中间，而右边用的是 UIVerticalAligmentLabel，出现在 label frame 的顶部）
 
 2. 计算在给定的文字类型和宽度限制下，文本将会占到的高度
 
 
-## 扩展
+## Extension
 
 1. 获得当前类名
 
 
-## 状态栏
+## Status Bar
 
 1. 更改状态栏 status bar （运营商，时间，电池） 为白色
+
+## UIView
+
+1. 添加阴影

@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         presentLabel()
         presentExtension()
         presentStatusBar()
+        presentView()
     }
 
     /**
@@ -74,6 +75,13 @@ class ViewController: UIViewController {
          更改 status bar （运营商，时间，电池） 为白色
          */
         //presentChangeStatusBar()
+    }
+    
+    private func presentView() {
+        /**
+         添加阴影
+         */
+        //presentViewShadowDepth()
     }
     
     
@@ -124,6 +132,13 @@ class ViewController: UIViewController {
     private func presentChangeStatusBar() {
         self.view.backgroundColor = UIColor.blackColor()
         changeStatusBarToLight()
+    }
+    
+    private func presentViewShadowDepth() {
+        let v = UIView(frame: CGRectMake(50, 50, 100, 100))
+        v.backgroundColor = UIColor.blueColor()
+        self.view.addSubview(v)
+        prepareDepth(v, depth: .Depth5)
     }
 }
 
