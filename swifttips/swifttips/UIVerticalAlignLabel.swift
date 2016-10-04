@@ -33,21 +33,21 @@ public class UIVerticalAlignLabel: UILabel {
      
      - returns: <#return value description#>
      */
-    public override func textRectForBounds(bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
-        let rect = super.textRectForBounds(bounds, limitedToNumberOfLines: numberOfLines)
+    public override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+        let rect = super.textRect(forBounds: bounds, limitedToNumberOfLines: numberOfLines)
         
         switch verticalAligment {
         case .VerticalAligmentTop:
-            return CGRectMake(bounds.origin.x, bounds.origin.y, rect.size.width, rect.size.height)
+            return CGRect.init(x: bounds.origin.x, y: bounds.origin.y, width: rect.size.width, height: rect.size.height)
         case .VerticalAligmentMiddle:
-            return CGRectMake(bounds.origin.x, bounds.origin.y + (bounds.size.height - rect.size.height) / 2, rect.size.width, rect.size.height)
+            return CGRect.init(x: bounds.origin.x, y: bounds.origin.y + (bounds.size.height - rect.size.height) / 2, width: rect.size.width, height: rect.size.height)
         case .VerticalAligmentBottom:
-            return CGRectMake(bounds.origin.x, bounds.origin.y + (bounds.size.height - rect.size.height), rect.size.width, rect.size.height)
+            return CGRect.init(x: bounds.origin.x, y: bounds.origin.y + (bounds.size.height - rect.size.height), width: rect.size.width, height: rect.size.height)
         }
     }
     
-    public override func drawTextInRect(rect: CGRect) {
-        let r = self.textRectForBounds(rect, limitedToNumberOfLines: self.numberOfLines)
-        super.drawTextInRect(r)
+    public override func drawText(in rect: CGRect) {
+        let r = self.textRect(forBounds: rect, limitedToNumberOfLines: self.numberOfLines)
+        super.drawText(in: r)
     }
 }

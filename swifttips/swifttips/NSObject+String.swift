@@ -13,7 +13,7 @@ extension NSObject {
     
     /// 获得当前类名
     class var nameOfClass: String {
-        return NSStringFromClass(self).componentsSeparatedByString(".").last! as String
+        return NSStringFromClass(self).components(separatedBy: ".").last!
     }
 
 }

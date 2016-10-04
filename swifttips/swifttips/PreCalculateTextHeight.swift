@@ -19,9 +19,9 @@ import UIKit
  - returns: 文本的高度
  */
 func preCalculateTextHeight(text: String, font: UIFont, width: CGFloat) -> CGFloat {
-    let label:UILabel = UILabel(frame: CGRectMake(0, 0, width, CGFloat.max))
+    let label:UILabel = UILabel(frame: CGRect.init(x: 0, y: 0, width: width, height: CGFloat.greatestFiniteMagnitude))
     label.numberOfLines = 0
-    label.lineBreakMode = .ByWordWrapping
+    label.lineBreakMode = .byWordWrapping
     label.font = font
     label.text = text
     label.sizeToFit()

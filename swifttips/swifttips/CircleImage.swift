@@ -19,15 +19,15 @@ import UIKit
 public func circleImage(image: UIImage) -> UIImage {
     let square = CGSize(width: min(image.size.width, image.size.height), height: min(image.size.width, image.size.height))
     let imageView = UIImageView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: square))
-    imageView.contentMode = .ScaleAspectFill
+    imageView.contentMode = .scaleAspectFill
     imageView.image = image
     imageView.layer.cornerRadius = square.width / 2
     imageView.layer.masksToBounds = true
     UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, false, image.scale)
     let context = UIGraphicsGetCurrentContext()
-    imageView.layer.renderInContext(context!)
+    imageView.layer.render(in: context!)
     let result = UIGraphicsGetImageFromCurrentImageContext()
     UIGraphicsEndImageContext()
-    return result
+    return result!
 }
 

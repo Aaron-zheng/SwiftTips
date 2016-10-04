@@ -17,9 +17,9 @@ import UIKit
  */
 public func prepareDepth(view: UIView, depth: MaterialDepth) {
     view.layer.masksToBounds = false
-    view.layer.shadowColor = UIColor.grayColor().CGColor
+    view.layer.shadowColor = UIColor.gray.cgColor
     view.layer.zPosition = 0
-    let value = MaterialDepthToValue(depth)
+    let value = MaterialDepthToValue(depth: depth)
     view.layer.shadowOffset = value.offset
     view.layer.shadowOpacity = value.opacity
     view.layer.shadowRadius = value.radius
@@ -44,14 +44,14 @@ public func MaterialDepthToValue(depth: MaterialDepth) -> MaterialDepthType {
     case .None:
         return (offset: CGSize.zero, opacity: 0, radius: 0)
     case .Depth1:
-        return (offset: CGSizeMake(0, 1), opacity: 0.3, radius: 1)
+        return (offset: CGSize.init(width: 0, height: 1), opacity: 0.3, radius: 1)
     case .Depth2:
-        return (offset: CGSizeMake(0, 2), opacity: 0.3, radius: 2)
+        return (offset: CGSize.init(width: 0, height: 2), opacity: 0.3, radius: 2)
     case .Depth3:
-        return (offset: CGSizeMake(0, 3), opacity: 0.3, radius: 3)
+        return (offset: CGSize.init(width: 0, height: 3), opacity: 0.3, radius: 3)
     case .Depth4:
-        return (offset: CGSizeMake(0, 4), opacity: 0.3, radius: 4)
+        return (offset: CGSize.init(width: 0, height: 4), opacity: 0.3, radius: 4)
     case .Depth5:
-        return (offset: CGSizeMake(0, 5), opacity: 0.3, radius: 5)
+        return (offset: CGSize.init(width: 0, height: 5), opacity: 0.3, radius: 5)
     }
 }

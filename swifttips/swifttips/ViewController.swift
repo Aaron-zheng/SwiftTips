@@ -90,8 +90,8 @@ class ViewController: UIViewController {
     
     
     private func presentCircleImage() {
-        let imgView = UIImageView(frame: CGRectMake(view.frame.width / 2 - 50, view.frame.height / 2 - 50, 100, 100))
-        imgView.image = circleImage(UIImage(named: "profile")!)
+        let imgView = UIImageView(frame: CGRect.init(x: view.frame.width / 2 - 50, y: view.frame.height / 2 - 50, width: 100, height: 100))
+        imgView.image = circleImage(image: UIImage(named: "profile")!)
         view.addSubview(imgView)
     }
     
@@ -101,27 +101,27 @@ class ViewController: UIViewController {
         let height = view.frame.height
         
         let labelContent = "我与树莓在纽村打工旅行周记"
-        let label1 = UILabel(frame: CGRectMake(0, 0, width, height))
+        let label1 = UILabel(frame: CGRect.init(x: 0, y: 0, width: width, height: height))
         label1.text = labelContent
         label1.numberOfLines = 0
-        label1.backgroundColor = UIColor.blueColor()
+        label1.backgroundColor = UIColor.blue
         view.addSubview(label1)
-        let label2 = UIVerticalAlignLabel(frame: CGRectMake(width, 0, width, height))
+        let label2 = UIVerticalAlignLabel(frame: CGRect.init(x: width, y: 0, width: width, height: height))
         label2.text = labelContent
         label2.numberOfLines = 0
-        label2.backgroundColor = UIColor.greenColor()
+        label2.backgroundColor = UIColor.green
         view.addSubview(label2)
     }
     
     private func presentPreCalculateTextHeight() {
         let text = "在新西兰，呆了半年，可以写一点这里的感受。在这里，你会，住很多地方，遇到很多人，碰过很多事。对于住，来新西兰住过酒店 (Hotel)，公园 (Holiday Park)，寄宿家庭 (Home Stay)，同住屋 (Shared House)，还有最没想到的帐篷 (Tent)。对于自己，印象最深的就是住山上的帐篷，住起来，没有想象中的差，但也没有想象中的那么酷和自在。对于人，有些人是工作遇到的，碰面多了，就会加深交流，然而总有一天，会因种种原因而分道扬镳了，我们扬言着以后再见，却又不知道那天是否真的来临，不过心里还是会有点小期待。有些人则是超市、路过、玩耍中认识，可能说过一次话见过一次面后，就再也不会记起对方，这样的遇见次数多了，就开始对陌生人脸盲了。而有些人则是你不喜欢的，但是利益冲突在新西兰是比较少的，所以哪怕遇到你不喜欢的人也不会讨厌。对于事，有些是开心的，有些是不开心的。这些记忆对于我来说，可能都带不走了，最后留下的可能都是手机的相片和这些文字了。打工假期的这个签证本身，就意味着你可以选择多种季节工，接触不同国家不同地方的人，然后发生不一样的事情。在新西兰3个月碰上的事可能远超我呆广州1年所发生的。"
-        let height = preCalculateTextHeight(text, font: UIFont(name: "Helvetica", size: 12)!, width: view.frame.width)
-        let label = UILabel(frame: CGRectMake(0, 0, view.frame.width, height))
+        let height = preCalculateTextHeight(text: text, font: UIFont(name: "Helvetica", size: 12)!, width: view.frame.width)
+        let label = UILabel(frame: CGRect.init(x: 0, y: 0, width: view.frame.width, height: height))
         label.text = text
         label.numberOfLines = 0
         label.font = UIFont(name: "Helvetica", size: 12)!
-        label.textColor = UIColor.whiteColor()
-        label.backgroundColor = UIColor.blackColor()
+        label.textColor = UIColor.white
+        label.backgroundColor = UIColor.black
         view.addSubview(label)
     }
     
@@ -130,15 +130,15 @@ class ViewController: UIViewController {
     }
     
     private func presentChangeStatusBar() {
-        self.view.backgroundColor = UIColor.blackColor()
+        self.view.backgroundColor = UIColor.black
         changeStatusBarToLight()
     }
     
     private func presentViewShadowDepth() {
-        let v = UIView(frame: CGRectMake(50, 50, 100, 100))
-        v.backgroundColor = UIColor.blueColor()
+        let v = UIView(frame: CGRect.init(x: 50, y: 50, width: 100, height: 100))
+        v.backgroundColor = UIColor.blue
         self.view.addSubview(v)
-        prepareDepth(v, depth: .Depth5)
+        prepareDepth(view: v, depth: .Depth5)
     }
 }
 

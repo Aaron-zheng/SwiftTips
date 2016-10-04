@@ -14,5 +14,5 @@ import UIKit
  需要先修改 info.plist 里的 View controller-based status bar appearance 为 NO
  */
 public func changeStatusBarToLight() {
-    UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+    UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
 }
