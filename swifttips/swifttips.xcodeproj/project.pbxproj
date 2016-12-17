@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A0248B491D533D21003E3B00 /* NSObject+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0248B481D533D21003E3B00 /* NSObject+String.swift */; };
 		A0248B551D549414003E3B00 /* ControllerStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0248B541D549414003E3B00 /* ControllerStatusBar.swift */; };
+		A05F41E11E05DA17000BEAC7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05F41E01E05DA17000BEAC7 /* Constant.swift */; };
 		A062C4D31D448B9E00E9BA2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062C4D21D448B9E00E9BA2A /* AppDelegate.swift */; };
 		A062C4D51D448B9E00E9BA2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062C4D41D448B9E00E9BA2A /* ViewController.swift */; };
 		A062C4D81D448B9E00E9BA2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A062C4D61D448B9E00E9BA2A /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		A0248B481D533D21003E3B00 /* NSObject+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+String.swift"; sourceTree = "<group>"; };
 		A0248B541D549414003E3B00 /* ControllerStatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerStatusBar.swift; sourceTree = "<group>"; };
+		A05F41E01E05DA17000BEAC7 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		A062C4CF1D448B9E00E9BA2A /* swifttips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swifttips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A062C4D21D448B9E00E9BA2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A062C4D41D448B9E00E9BA2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,14 @@
 			name = StatusBar;
 			sourceTree = "<group>";
 		};
+		A05F41DF1E05DA08000BEAC7 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				A05F41E01E05DA17000BEAC7 /* Constant.swift */,
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
 		A062C4C61D448B9E00E9BA2A = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +170,7 @@
 		A062C5041D448C2600E9BA2A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				A05F41DF1E05DA08000BEAC7 /* Constant */,
 				A0BB849B1D7B912300FF43D8 /* View */,
 				A0248B531D5493E7003E3B00 /* StatusBar */,
 				A0248B471D533D10003E3B00 /* Extension */,
@@ -338,6 +349,7 @@
 				A062C4D51D448B9E00E9BA2A /* ViewController.swift in Sources */,
 				A062C5061D448C4500E9BA2A /* CircleImage.swift in Sources */,
 				A062C4DB1D448B9E00E9BA2A /* swifttips.xcdatamodeld in Sources */,
+				A05F41E11E05DA17000BEAC7 /* Constant.swift in Sources */,
 				A062C4D31D448B9E00E9BA2A /* AppDelegate.swift in Sources */,
 				A0BB849D1D7B914000FF43D8 /* ViewShadowDepth.swift in Sources */,
 			);
