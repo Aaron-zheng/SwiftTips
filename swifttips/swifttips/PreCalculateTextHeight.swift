@@ -27,16 +27,3 @@ func preCalculateTextHeight(text: String, font: UIFont, width: CGFloat) -> CGFlo
     label.sizeToFit()
     return label.frame.height
 }
-
-
-/**
- 添加一层遮罩
- 
- */
-private func blur(background: UIView) {
-    let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
-    let blurEffectView = UIVisualEffectView(effect: blurEffect)
-    blurEffectView.frame = background.bounds
-    blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
-    background.addSubview(blurEffectView)
-}
